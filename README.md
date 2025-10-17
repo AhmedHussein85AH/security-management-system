@@ -1,96 +1,240 @@
-# CCTV Case Guardian
-You can access the dashboard [here](https://ahmedhussein85ah.github.io/dashboard).
+# 🛡️ CCTV Case Guardian
 
-## Project info
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-brightgreen)](https://ahmedhussein85ah.github.io/security-management-system/)
+[![React](https://img.shields.io/badge/React-18.3.1-blue)](https://reactjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.5.3-blue)](https://www.typescriptlang.org/)
+[![Vite](https://img.shields.io/badge/Vite-5.4.1-purple)](https://vitejs.dev/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-3.4.11-cyan)](https://tailwindcss.com/)
 
-**Use your preferred IDE**
+A comprehensive security case management system designed for modern security teams. CCTV Case Guardian provides centralized incident tracking, role-based access control, real-time notifications, and comprehensive reporting capabilities.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## ✨ Features
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### 🔐 Authentication & Authorization
+- **Role-based access control** with Admin and User permissions
+- **Secure login system** with demo credentials for testing
+- **Permission-based UI** that adapts to user roles
+- **Session management** with persistent authentication
 
-Follow these steps:
+### 📋 Case Management
+- **Create, edit, and track** security incidents
+- **Real-time case updates** with status tracking
+- **Case categorization** and priority assignment
+- **Evidence attachment** and documentation
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### 👥 User Management
+- **User administration** with role assignment
+- **Permission management** for granular access control
+- **User status tracking** (active/inactive)
+- **Password management** and security controls
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### 📊 Reporting & Analytics
+- **Comprehensive reports** generation
+- **Dashboard analytics** with key metrics
+- **Export capabilities** for documentation
+- **Real-time statistics** and insights
 
-# Step 3: Install the necessary dependencies.
-npm i
+### 🔔 Notifications
+- **Real-time notifications** for case updates
+- **Email-style messaging** system
+- **Notification management** and read status
+- **Alert system** for critical incidents
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+### 🎨 Modern UI/UX
+- **Responsive design** for all devices
+- **Dark/Light mode** support
+- **Professional interface** with shadcn/ui components
+- **Accessibility features** and keyboard navigation
 
-**Edit a file directly in GitHub**
+## 🚀 Quick Start
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Prerequisites
+- **Node.js** 18+ ([Download](https://nodejs.org/))
+- **npm** or **yarn** package manager
+- **Git** for version control
 
-**Use GitHub Codespaces**
+### Installation
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/security-management-system.git
+   cd security-management-system
+   ```
 
-## Demo credentials
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-Use these for easy testing:
+3. **Start development server**
+   ```bash
+   npm run dev
+   ```
 
-- Admin: `admin@demo.local` / `admin123`
-- User: `user@demo.local` / `user123`
+4. **Open your browser**
+   Navigate to `http://localhost:8080`
 
-You can also use: `AhmedHusseinElsayed@outlook.com` / `Cas@135$` (Admin)
-
-## Run locally (Windows)
-
-Double‑click `run-dev.bat` or run from PowerShell:
-
+### Windows Quick Start
+Double-click `run-dev.bat` or run from PowerShell:
 ```powershell
-cd "D:\sites\Marassi Sites\ready to use\security-management-system"
+cd "path\to\security-management-system"
 ./run-dev.bat
 ```
 
-The script checks Node/npm, installs deps (with a mirror fallback), then starts Vite on `http://localhost:8080`.
+## 🔑 Demo Credentials
 
-## Deploy to GitHub Pages
+Test the application with these pre-configured accounts:
 
-1. Ensure your repository name is `security-management-system` (or update `vite.config.ts` base accordingly).
-2. Push to `main`: the workflow `.github/workflows/deploy.yml` will build and deploy automatically.
-3. Pages URL will be shown in the workflow summary.
+| Role | Email | Password | Permissions |
+|------|-------|----------|-------------|
+| **Admin** | `admin@demo.local` | `admin123` | Full access to all features |
+| **User** | `user@demo.local` | `user123` | Limited access (view cases, reports) |
+| **Admin** | `AhmedHusseinElsayed@outlook.com` | `Cas@135$` | Full access (production account) |
 
-Local build preview:
+## 🏗️ Project Structure
 
-```sh
-npm run build
-npm run preview
+```
+security-management-system/
+├── .github/workflows/     # GitHub Actions workflows
+├── public/               # Static assets
+├── src/
+│   ├── components/       # React components
+│   │   ├── auth/        # Authentication components
+│   │   ├── cases/       # Case management components
+│   │   ├── dashboard/   # Dashboard components
+│   │   ├── layout/      # Layout components
+│   │   ├── messages/    # Messaging components
+│   │   ├── navigation/   # Navigation components
+│   │   ├── reports/     # Reporting components
+│   │   ├── ui/          # shadcn/ui components
+│   │   └── users/       # User management components
+│   ├── hooks/           # Custom React hooks
+│   ├── pages/           # Page components
+│   ├── services/        # API services
+│   ├── types/           # TypeScript type definitions
+│   └── utils/           # Utility functions
+├── .github/workflows/deploy.yml  # GitHub Pages deployment
+├── run-dev.bat          # Windows development script
+└── README.md            # This file
 ```
 
-### GitHub Pages notes
+## 🛠️ Technology Stack
 
-- Base path is set in `vite.config.ts` to `/security-management-system/` for production.
-- If your repo name changes, update the `base` accordingly.
+### Frontend
+- **[React 18.3.1](https://reactjs.org/)** - UI library
+- **[TypeScript 5.5.3](https://www.typescriptlang.org/)** - Type safety
+- **[Vite 5.4.1](https://vitejs.dev/)** - Build tool and dev server
+- **[Tailwind CSS 3.4.11](https://tailwindcss.com/)** - Styling framework
 
-## What technologies are used for this project?
+### UI Components
+- **[shadcn/ui](https://ui.shadcn.com/)** - Component library
+- **[Radix UI](https://www.radix-ui.com/)** - Headless UI primitives
+- **[Lucide React](https://lucide.dev/)** - Icon library
+- **[Sonner](https://sonner.emilkowal.ski/)** - Toast notifications
 
-This project is built with:
+### State Management & Data
+- **[TanStack Query](https://tanstack.com/query)** - Server state management
+- **[React Hook Form](https://react-hook-form.com/)** - Form handling
+- **[Zod](https://zod.dev/)** - Schema validation
+- **[Axios](https://axios-http.com/)** - HTTP client
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+### Development Tools
+- **[ESLint](https://eslint.org/)** - Code linting
+- **[PostCSS](https://postcss.org/)** - CSS processing
+- **[Autoprefixer](https://autoprefixer.github.io/)** - CSS vendor prefixes
 
-## Recent updates
+## 📦 Available Scripts
 
-- Renamed app branding to "CCTV Case Guardian" across UI.
-- Added demo Admin/User credentials for easy testing.
-- Hardened `run-dev.bat` (Node/npm checks, registry fallback, PORT variable).
-- Configured Vite base for GitHub Pages and added deploy workflow.
+| Command | Description |
+|---------|-------------|
+| `npm run dev` | Start development server |
+| `npm run build` | Build for production |
+| `npm run build:dev` | Build in development mode |
+| `npm run preview` | Preview production build |
+| `npm run lint` | Run ESLint |
+
+## 🌐 Deployment
+
+### GitHub Pages (Recommended)
+
+1. **Enable GitHub Pages**
+   - Go to repository **Settings** → **Pages**
+   - Set **Source** to **"GitHub Actions"**
+
+2. **Deploy automatically**
+   - Push to `main` branch
+   - Workflow runs automatically
+   - Site deploys to `https://ahmedhussein85ah.github.io/security-management-system/`
+
+### Manual Deployment
+
+```bash
+# Build the project
+npm run build
+
+# Preview locally
+npm run preview
+
+# Deploy to your hosting provider
+# Upload the 'dist' folder contents
+```
+
+## 🔧 Configuration
+
+### Environment Variables
+Create a `.env.local` file for local development:
+```env
+VITE_API_URL=http://localhost:3000/api
+VITE_APP_NAME=CCTV Case Guardian
+```
+
+### Vite Configuration
+The `vite.config.ts` file contains:
+- **Base path** configuration for GitHub Pages
+- **Path aliases** for clean imports
+- **Plugin configuration** for React and development tools
+
+## 🤝 Contributing
+
+1. **Fork the repository**
+2. **Create a feature branch**
+   ```bash
+   git checkout -b feature/amazing-feature
+   ```
+3. **Commit your changes**
+   ```bash
+   git commit -m 'Add amazing feature'
+   ```
+4. **Push to the branch**
+   ```bash
+   git push origin feature/amazing-feature
+   ```
+5. **Open a Pull Request**
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 👨‍💻 Author
+
+**Ahmed Hussein Elsayed**  
+Security Coordinator  
+Email: AhmedHusseinElsayed@outlook.com
+
+## 🙏 Acknowledgments
+
+- [shadcn/ui](https://ui.shadcn.com/) for the beautiful component library
+- [Tailwind CSS](https://tailwindcss.com/) for the utility-first CSS framework
+- [Vite](https://vitejs.dev/) for the lightning-fast build tool
+- [React](https://reactjs.org/) for the amazing UI library
+
+---
+
+<div align="center">
+
+**Made with ❤️ for security professionals**
+
+[🔗 Live Demo](https://ahmedhussein85ah.github.io/security-management-system/) | [📖 Documentation](#) | [🐛 Report Bug](#) | [💡 Request Feature](#)
+
+</div>
 
