@@ -7,6 +7,7 @@
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-3.4.11-cyan)](https://tailwindcss.com/)
 
 A comprehensive security case management system designed for modern security teams. CCTV Case Guardian provides centralized incident tracking, role-based access control, real-time notifications, and comprehensive reporting capabilities.
+<img width="945" height="407" alt="Screenshot 2025-10-17 195138" src="https://github.com/user-attachments/assets/8381b59c-0562-4e2a-ac46-750a81710714" />
 
 ## ✨ Features
 
