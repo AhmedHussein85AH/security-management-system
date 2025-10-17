@@ -1,5 +1,5 @@
 # CCTV Case Guardian
-
+You can access the dashboard [here](https://ahmedhussein85ah.github.io/dashboard).
 
 ## Project info
 
