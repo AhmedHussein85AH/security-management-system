@@ -8,9 +8,11 @@
 
 A comprehensive security case management system designed for modern security teams. CCTV Case Guardian provides centralized incident tracking, role-based access control, real-time notifications, and comprehensive reporting capabilities.
 
-=======
 <img width="945" height="407" alt="Screenshot 2025-10-17 195138" src="https://github.com/user-attachments/assets/8381b59c-0562-4e2a-ac46-750a81710714" />
-<<<<<<< HEAD>>>>>>> c70a48416d2164aa4ea4168ae5fb9d81df9a560d
+<<<<<<< HEAD>>>>>>> c70a48416d2164aa4ea4168ae5fb9d81df9a560d>>>>>>>>
+
+## 🌟 **Live Demo**
+🚀 **[Try it now!](https://ahmedhussein85ah.github.io/security-management-system/)** - Experience the LEGENDARY interface
 
 ## ✨ Features
 
